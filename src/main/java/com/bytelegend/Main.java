@@ -8,13 +8,15 @@ public class Main {
     public static void main(String[] args) {
         Base object = new Sub();
         ParamBase param = new ParamSub();
-        object.print(param);
+        object.print((ParamSub) param);
     }
 }
 
-class ParamBase {}
+class ParamBase {
+}
 
-class ParamSub extends ParamBase {}
+class ParamSub extends ParamBase {
+}
 
 class Base {
     public void print(ParamBase param) {
