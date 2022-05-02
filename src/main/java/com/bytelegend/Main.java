@@ -8,7 +8,7 @@ public class Main {
     public static void main(String[] args) {
         Base object = new Sub();
         ParamBase param = new ParamSub();
-        object.print(param);
+        object.print((ParamSub) param);
     }
 }
 
