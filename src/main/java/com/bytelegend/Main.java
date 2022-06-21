@@ -9,6 +9,9 @@ public class Main {
         Base object = new Sub();
         ParamBase param = new ParamSub();
         object.print(param);
+
+
+        
     }
 }
 
