@@ -7,16 +7,14 @@ package com.bytelegend;
 public class Main {
     public static void main(String[] args) {
         Base object = new Sub();
-        ParamSub param = new ParamSub();
+        ParamBase param = new ParamSub();
         object.print(param);
     }
 }
 
-class ParamBase {
-}
+class ParamBase {}
 
-class ParamSub extends ParamBase {
-}
+class ParamSub extends ParamBase {}
 
 class Base {
     public void print(ParamBase param) {
