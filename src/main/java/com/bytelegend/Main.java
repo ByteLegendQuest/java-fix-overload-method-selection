@@ -6,17 +6,15 @@ package com.bytelegend;
  */
 public class Main {
     public static void main(String[] args) {
-        Sub object = new Sub(); // 修改为Sub类型
-        ParamSub param = new ParamSub(); // 修改为ParamSub类型
-        object.print(param); // 调用Sub类中的方法
+        Base object = new Sub();
+        ParamBase param = new ParamSub();
+        object.print(param);
     }
 }
 
-class ParamBase {
-}
+class ParamBase {}
 
-class ParamSub extends ParamBase {
-}
+class ParamSub extends ParamBase {}
 
 class Base {
     public void print(ParamBase param) {
