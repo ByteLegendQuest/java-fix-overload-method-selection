@@ -1,20 +1,24 @@
 package com.bytelegend;
 
 /**
- * Guess the output of `Main.main()` method, then run it and see if it is expected. Please
- * understand it and modify `main()` method to make it output "I am Sub, the param is ParamSub".
+ * Guess the output of `Main.main()` method, then run it and see if it is
+ * expected. Please
+ * understand it and modify `main()` method to make it output "I am Sub, the
+ * param is ParamSub".
  */
 public class Main {
     public static void main(String[] args) {
-        Base object = new Sub();
-        ParamBase param = new ParamSub();
+        Sub object = new Sub();
+        ParamSub param = new ParamSub();
         object.print(param);
     }
 }
 
-class ParamBase {}
+class ParamBase {
+}
 
-class ParamSub extends ParamBase {}
+class ParamSub extends ParamBase {
+}
 
 class Base {
     public void print(ParamBase param) {
